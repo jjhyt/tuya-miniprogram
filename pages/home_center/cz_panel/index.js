@@ -22,20 +22,20 @@ Page({
     forest: '../../../image/forest@2x.png',
     active: 0,
     iconkg: {
-      normal: 'http://qty83k.creatby.com/materials/195302/origin/f21c132b9fb95a6357c1170e0a506089_origin.png',
-      active: 'http://qty83k.creatby.com/materials/195302/origin/a7ae55322173cdbbbc377551cf4a2b04_origin.png',
+      normal: '/image/kg-2.png',
+      active: '/image/kg-1.png',
     },
     iconds: {
-      normal: 'http://qty83k.creatby.com/materials/195302/origin/3755b490e796e2c98252cfb3180b6daa_origin.png',
-      active: 'http://qty83k.creatby.com/materials/195302/origin/12f9adc9822bcc0b139a4e50aee9cc40_origin.png',
+      normal: '/image/ds-2.png',
+      active: '/image/ds-1.png',
     },
     icondjs: {
-      normal: 'http://qty83k.creatby.com/materials/195302/origin/5a1b4e7ed9e2784c4c03f924bb612326_origin.png',
-      active: 'http://qty83k.creatby.com/materials/195302/origin/095b4df41c275798c8f714402f13a56e_origin.png',
+      normal: '/image/djs-2.png',
+      active: '/image/djs-1.png',
     },
     iconjl: {
-      normal: 'http://qty83k.creatby.com/materials/195302/origin/365c64fe03c5b1440c070cc6e2c55831_origin.png',
-      active: 'http://qty83k.creatby.com/materials/195302/origin/32e8e3d7856d0c9d312991d06c843d87_origin.png',
+      normal: '/image/jl-2.png',
+      active: '/image/jl-1.png',
     },
   },
 

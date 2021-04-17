@@ -4,7 +4,9 @@
 1.修改了小程序名称。
 
 2.新建了一个插座控制页面。背景图片是小新哦！
+
 ![插座页](https://github.com/jjhyt/tuya-miniprogram/raw/master/image/czpanel.png "插座页截图") 
+
 3.代码片段自带了vant weapp UI，用来做前端UI非常简单易用！
 
 4.正在做微信授权登录页面。。。

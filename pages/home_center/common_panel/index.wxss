@@ -1,6 +1,6 @@
 /* miniprogram/pages/home_center/common_panel/index.js.wxss */
 page { 
-  width:  100%; background-image:  url("http://qty83k.creatby.com/materials/195302/origin/beb292fbde8429b71542cc0ab275a595_origin.png"); background-size:  cover; background-repeat:  no-repeat; background-color:  transparent; height:  100%; background-position:  0% 100%; background-position-x: 0%; background-position-y: 100%;  
+   
 }
 .common-panel-backgroud {
   position: absolute;

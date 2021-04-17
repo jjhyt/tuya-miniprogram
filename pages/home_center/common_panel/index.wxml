@@ -1,6 +1,6 @@
 <!--miniprogram/pages/home_center/common_panel/index.js.wxml-->
 <wxs src="./index.wxs" module="utils" />
-
+<image class="common-panel-backgroud" src="{{forest}}" />
 <navbar device_name="{{device_name}}" bind:jumpTodeviceEditPage="jumpTodeviceEditPage" />
 
 <view class="common-panel-header">

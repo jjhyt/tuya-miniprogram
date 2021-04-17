@@ -34,8 +34,8 @@
     </view>
     <text class="c-block wx-text_lsbzDL" data-c_e_id="wx_text_f31c0e29">漂亮的小姐姐，做什么都是对的！</text>
     <image class="wx-image_I9s5sN" data-c_e_id="wx_image_53423e9f" mode="scaleToFill"
-        src="http://qty83k.creatby.com/materials/195302/origin/e24c4c82232e2f7bf7185a6dc48583ec_origin.png"
-        style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/195302/origin/e24c4c82232e2f7bf7185a6dc48583ec_origin.png); " />
+        src="/image/xiaoxin.png"
+        style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(/image/xiaoxin.png); " />
 </view>
 <view class = "wx-view_button">
   <van-button plain hairline type="primary">电压:220V</van-button>
