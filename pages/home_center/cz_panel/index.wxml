@@ -1,0 +1,106 @@
+<!--miniprogram/pages/home_center/cz_panel/index.js.wxml-->
+<wxs src="./index.wxs" module="utils" />
+
+<navbar device_name="{{device_name}}" bind:jumpTodeviceEditPage="jumpTodeviceEditPage" />
+
+<block wx:if="{{titleItem.value === 'true'}}">
+    <view class="c-minheight wx-view_uuhWUk" data-c_e_id="wx_view_646a2137">
+        <van-image  class="wx-image_esULK4"
+           round
+           width="200"
+           height="200"
+            src="https://images.tuyacn.com/smart/uiconf/dc102_1_on.png" bind:click="sendDptitlefalse" />
+        <text class="c-block wx-text_pGrtNj" data-c_e_id="wx_text_53819554">插座已打开</text>
+    </view>
+</block>
+<block wx:else="{{titleItem.value === 'false'}}">
+    <view class="c-minheight wx-view_uuhWUk" data-c_e_id="wx_view_646a2137" style="width: 750rpx; height: 586rpx; display: flex; box-sizing: border-box; left: NaNrpx; top: NaNrpx">
+        <van-image  class="wx-image_esULK4" 
+           round
+           width="200"
+           height="200"
+            src="https://images.tuyacn.com/smart/uiconf/dc102_1_off.png"
+            bind:click="sendDptitletrue" />
+        <text class="c-block wx-text_pGrtNj" data-c_e_id="wx_text_53819554">插座已关闭</text>
+    </view>
+</block>
+
+<view class="c-minheight wx-view_nN5rHQ" data-c_e_id="wx_view_74253ae6">
+    <view class="weui-panel_access" data-c_e_id="wx_view_a6cc0615">
+        <view class="weui-panel__hd" data-c_e_id="wx_view_d8752d8b" />
+        <view class="weui-panel__bd" data-c_e_id="wx_view9760ff70">
+            <view class="weui-media-box__bd" data-c_e_id="wx_view62538c58" />
+        </view>
+    </view>
+    <text class="c-block wx-text_lsbzDL" data-c_e_id="wx_text_f31c0e29">漂亮的小姐姐，做什么都是对的！</text>
+    <image class="wx-image_I9s5sN" data-c_e_id="wx_image_53423e9f" mode="scaleToFill"
+        src="http://qty83k.creatby.com/materials/195302/origin/e24c4c82232e2f7bf7185a6dc48583ec_origin.png"
+        style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/195302/origin/e24c4c82232e2f7bf7185a6dc48583ec_origin.png); " />
+</view>
+<view class = "wx-view_button">
+  <van-button plain hairline type="primary">电压:220V</van-button>
+  <van-button plain hairline type="primary">电流:560mA</van-button>
+  <van-button plain hairline type="primary">功率:520w</van-button>
+</view>
+<van-tabbar active="{{ active }}" bind:change="tabonChange">
+  <van-tabbar-item >
+    <image
+      slot="icon"
+      src="{{ iconkg.normal }}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;"
+    />
+    <image
+      slot="icon-active"
+      src="{{ iconkg.active }}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;"
+    />
+    开关
+  </van-tabbar-item>
+  <van-tabbar-item >
+  <image
+      slot="icon"
+      src="{{ iconds.normal }}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;"
+    />
+    <image
+      slot="icon-active"
+      src="{{ iconds.active }}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;"
+    />
+    定时
+  </van-tabbar-item>
+  <van-tabbar-item >
+  <image
+      slot="icon"
+      src="{{ icondjs.normal }}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;"
+    />
+    <image
+      slot="icon-active"
+      src="{{ icondjs.active }}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;"
+    />
+    倒计时
+  </van-tabbar-item>
+  <van-tabbar-item >
+  <image
+      slot="icon"
+      src="{{ iconjl.normal }}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;"
+    />
+    <image
+      slot="icon-active"
+      src="{{ iconjl.active }}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;"
+    />
+    计量
+  </van-tabbar-item>
+</van-tabbar>
