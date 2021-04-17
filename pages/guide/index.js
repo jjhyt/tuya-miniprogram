@@ -32,10 +32,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: async function (options) {
+    const { nickName, avatarUrl } = options
     const { cloudInner } = this.data;
     const { miniProgram } = wx.getAccountInfoSync();
+    console.log(nickName)
+    console.log(avatarUrl)
     wx.cloud.init({ env: `ty-${miniProgram.appId}` });
-
+    
     try {
       const { device_id } = await request({
         name: 'ty-service',

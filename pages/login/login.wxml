@@ -1,21 +1,29 @@
 <view class="container">
   <view class="userinfo">
-    <view class='header'>
-        <image src='/image/wx_login.png'></image>
-    </view>
- 
-    <view class='content'>
-        <view>申请获取以下权限</view>
-        <text>获得你的公开信息(昵称，头像等)</text>
-    </view>
-
     <block wx:if="{{!hasUserInfo}}">
+      <view class='header'>
+         <image src='/image/wx_login.png'></image>
+      </view>
+ 
+      <view class='content'>
+         <view>申请获取以下权限</view>
+         <text>获得你的公开信息(昵称，头像等)</text>
+      </view>
       <button wx:if="{{canIUseGetUserProfile}}" class='bottom' type='primary' bindtap="getUserProfile"> 获取头像昵称 </button>
       <button wx:else open-type="getUserInfo" class='bottom' type='primary' bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     </block>
     <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <view class='header'>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      </view>
+      <view class='connickname'>
+         <view>热烈欢迎你的到来</view>
+         <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+         
+      </view>
+      <view class='connav'>
+        <navigator url="/pages/guide/index?nickName=${{userInfo.nickName}}&avatarUrl=${{userInfo.avatarUrl}}">跳转到新页面</navigator>
+      </view>
     </block>
   </view>
 </view>

@@ -23,6 +23,22 @@
   margin-top: 40rpx;
 }
 
+.connickname {
+  margin-bottom: 90rpx;
+  text-align: center;
+}
+
+.connickname text {
+  display: block;
+  color: #000000;
+  margin-top: 30rpx;
+}
+
+.connav {
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+
 .bottom {
   border-radius: 80rpx;
   margin: 70rpx 50rpx;

@@ -45,7 +45,7 @@ Page({
   onLoad: function (options) {
     const { device_id } = options
     this.setData({ device_id })
-
+    console.log(options)
     // mqtt消息监听
     wxMqtt.on('message', (topic, newVal) => {
       const { status } = newVal
